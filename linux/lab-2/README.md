@@ -16,5 +16,7 @@ Use your system's package manager to install these packages. For example, on Deb
 sudo apt-get update
 sudo apt-get install msmtp mailutils
 
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/linux/lab-2/Disk_space.png)
+
 
 
