@@ -1,0 +1,37 @@
+---
+- name: Install and Configure MySQL
+  hosts: myservers
+  become: yes
+  vars_files:
+    - secrets.yml
+  tasks:
+    - name: Install MySQL Server package
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: Set mysql root password
+      mysql_user:
+        name: root
+        password: "{{ mysql_root_password }}"
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: Create MySQL database
+      mysql_db:
+        name: my_database
+        state: present
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: Create MySQL user
+      mysql_user:
+        name: db-admin
+        password: "{{ db_admin_password }}"
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: Grant privileges to MySQL user
+      mysql_user:
+        name: db-admin
+        password: "{{ db_admin_password }}"
+        priv: "my_database.*:ALL"
+        state: present
+        login_unix_socket: /var/run/mysqld/mysqld.sock
