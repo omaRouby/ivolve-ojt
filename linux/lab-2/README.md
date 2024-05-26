@@ -2,8 +2,6 @@
 
 This script is designed to monitor disk space usage on your system and send email alerts when the usage exceeds a specified threshold. Below are the steps to set up and configure the script:
 
-```markdown
-![Disk Space Alert Email](linux/lab-2/Disk_space.png)
 
 ## Prerequisites
 
