@@ -12,3 +12,6 @@ Before using the playbook, ensure the following:
 
 ## Run the playbook 
 ![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-2/ansible-pb-run.png)
+
+## Verify the apache website
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-2/acces%20the%20apache%20server%20page.png)
