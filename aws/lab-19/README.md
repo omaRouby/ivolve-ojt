@@ -1,7 +1,7 @@
 
 # AWS Project Documentation
 
-This project involves setting up an AWS environment with specific IAM configurations, billing alarms, and creating 2 IAM groups (admin-developer), admin group has admin permissions, developer group only access to s3, create admin-1 user console access only with MFA & admin-2 user with cli access only and list all users and groups using commands,  Below are the steps taken and screenshots documenting each part of the process.
+This project involves setting up an AWS environment with specific IAM configurations, billing alarms, and creating 2 IAM groups (admin-developer), admin group has admin permissions, developer group only access to s3, create admin-1 user console access only with MFA & admin-2 user with cli access only and list all users and groups using commands,  Below are the steps taken and screenshots documenting each part of the process and a Reminder at the end.
 
 ## Project Steps
 
