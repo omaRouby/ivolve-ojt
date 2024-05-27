@@ -47,6 +47,6 @@ This project involves setting up an AWS environment with specific IAM configurat
      - ![Access Allowed to S3](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/access%20allowed%20to%20s3.png)
 
 7. **List Users and Groups**
-   signin into the cli using admin-2 public and private keys ypu generated
+   - signin into the cli using admin-2 public and private keys ypu generated
    - admin-2 user Lists all IAM users and groups using AWS CLI commands.
    - ![List Users and Groups from CLI](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/list%20users%20and%20groupps%20from%20cli.png)
