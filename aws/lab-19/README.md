@@ -18,11 +18,14 @@ This project involves setting up an AWS environment with specific IAM configurat
 3. **Create IAM Groups**
    - Create two IAM groups: `admin` and `developer`.
      - `admin` group has administrative permissions.
+       ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/create-admin-group%26attachpolicies.png)
      - `developer` group has access to S3 only.
+       ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/dev-group%26attach-onlyS3.png)
 
 4. **Create IAM Users**
    - Create users with specific access controls:
      - `admin-1` user with console access only and MFA enabled.
+       ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/admin-2%26enable-console.png)
      - `admin-2` user with CLI access only.
      - `dev-user` with programmatic and console access.
    - **Access Denied for EC2:**
