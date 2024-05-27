@@ -19,16 +19,23 @@ This project involves setting up an AWS environment with specific IAM configurat
    - Create two IAM groups: `admin` and `developer`.
      - `admin` group has administrative permissions.
     
-       
+
+
+     
        ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/create-admin-group%26attachpolicies.png)
      - `developer` group has access to S3 only.
-    
+
+
+   
        
        ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/dev-group%26attach-onlyS3.png)
 
-4. **Create IAM Users**
+5. **Create IAM Users**
    - Create users with specific access controls:
      - `admin-1` user with console access only and MFA enabled.
+  
+
+   
        ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/admin-2%26enable-console.png)
      - `admin-2` user with CLI access only.
      - `dev-user` with programmatic and console access.
@@ -39,7 +46,7 @@ This project involves setting up an AWS environment with specific IAM configurat
    - dev user trying to navigate to S3 buckets but and he success due to the attached group polices
      - ![Access Allowed to S3](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/access%20allowed%20to%20s3.png)
 
-5. **List Users and Groups**
+7. **List Users and Groups**
    signin into the cli using admin-2 public and private keys ypu generated
    - admin-2 user Lists all IAM users and groups using AWS CLI commands.
    - ![List Users and Groups from CLI](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/list%20users%20and%20groupps%20from%20cli.png)
