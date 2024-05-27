@@ -50,3 +50,12 @@ This project involves setting up an AWS environment with specific IAM configurat
    - signin into the cli using admin-2 public and private keys you generated
    - admin-2 user Lists all IAM users and groups using AWS CLI commands.
    - ![List Users and Groups from CLI](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-19/pictures/list%20users%20and%20groupps%20from%20cli.png)
+  
+
+## Reminder
+
+1. **Don't forget to set the correct permissions on your private key file:**
+
+```sh
+chmod 400 <path/to/private-key.pem>
+
