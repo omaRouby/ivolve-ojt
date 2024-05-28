@@ -58,7 +58,7 @@ This project demonstrates how to create a VPC with two subnets, launch two EC2 i
   - ![](https://github.com/omaRouby/ivolve-ojt/blob/main/aws/lab-21/pictures/loaded-nginx-page.png)
     
   
-##Conclusion
+## Conclusion
 You have now created a VPC with two subnets, 
 launched two EC2 instances with Nginx and Apache installed, and configured an Application Load Balancer to distribute 
 traffic between the web servers.
