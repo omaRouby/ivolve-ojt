@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Touch file named ivolve
+      file:
+        path: /home/ec2-user/ivolve
+        state: touch
+
