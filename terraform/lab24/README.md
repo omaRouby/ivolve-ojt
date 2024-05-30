@@ -55,12 +55,12 @@ Once Terraform has applied the configuration, verify the deployment by accessing
 ### VPC Created
 
 The VPC is successfully created and configured.
-![VPC Created](vpc-created.png)
+![VPC Created](https://github.com/omaRouby/ivolve-ojt/blob/main/terraform/lab24/pictures/vpc-created.png)
 
 ### Internet Gateway Created
 
 The internet gateway is successfully created and attached to the VPC.
-![Internet Gateway Created](igw-created.png)
+![Internet Gateway Created](https://github.com/omaRouby/ivolve-ojt/blob/main/terraform/lab24/pictures/igw-created.png)
 
 
 ### RDS Database Created
