@@ -36,8 +36,12 @@ This project demonstrates how to use Ansible with a dynamic inventory to manage 
     ```sh
     ansible-playbook -i inventory.aws_ec2.yml touch-file.yml
     ```
+    then verify the file is added using addhook command
+   ```sh
+   ansible -i inventory.aws_ec2.yml all -m sell -a "ls -l /home/ec2-user"
+   ```
     ![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-27/pictures/playbook-touchfile-run.png)
-3. **Verify the File Creation**
+4. **Verify the File Creation**
      Connect to the EC2 instances and verify that the file has been created:
    ![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-27/pictures/verify-touched-file-console.png)
 
