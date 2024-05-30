@@ -1,4 +1,4 @@
-# Deploying a Multi-Tier Architecture with Terraform
+# Deploying a Multi-Tier Architecture with Terraform usinh Modules
 
 This guide explains how to deploy a multi-tier architecture on AWS using Terraform. The deployment includes setting up a VPC, subnets, EC2 instances, and an RDS database.
 
