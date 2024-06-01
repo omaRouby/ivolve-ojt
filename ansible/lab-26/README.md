@@ -38,26 +38,25 @@ ansible-galaxy init roles/openshift_cli
 ansible-galaxy init roles/docker
 ```
    
-3. **Create Playbook**:
+### 3. **Create Playbook**:
    - Write a playbook to use these roles and deploy the necessary software.
 
 #### 4. Run the Playbook
 
 Run the playbook using the dynamic inventory.
 
+The following images demonstrate the playbook run for deploying Jenkins, Docker, and OpenShift CLI.
+
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-26/Pictures/ansible-docker.png)
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-26/Pictures/ansible-jenkins.png)
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-26/Pictures/ansible-oc.png)
+
+Run the following command to execute the playbook:
+
 ```bash
 ansible-playbook -i inventory/ec2.py site.yml
 ```
-### Verification
-
-To verify that Jenkins, OpenShift CLI, and Docker have been installed correctly, we can check the following:
-
-1. **Jenkins**:
-   - Verify the Jenkins service is running.
-
-   ```bash
-   systemctl status jenkins
-   ```
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/ansible/lab-26/Pictures/verify-installation.png)
       
 
 
