@@ -94,9 +94,9 @@ oc get pods
 1. execute into the Nginx Pods deployed in both steps.
 2. Check if the index.html file with "Hello" exists in the default HTML path (/usr/share/nginx/html).
 3. Confirm that the Nginx Pod with the PVC (using PV) retains the "Hello" data, while the Pod without PVC does not.
-**The data is lost in the delpoyment without a pvc**
+.**The data is lost in the delpoyment without a pvc**
 ![](https://github.com/omaRouby/ivolve-ojt/blob/main/OpenShift/lab-9/pictures/nopvcdelete-exec-again.png)
-**The data is the same in the delpoyment with a pvc**
+.**The data is the same in the delpoyment with a pvc**
 ![](https://github.com/omaRouby/ivolve-ojt/blob/main/OpenShift/lab-9/pictures/new-pod-pv-hello.png)
 ## Conclusion
 
