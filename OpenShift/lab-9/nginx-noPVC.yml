@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment-no-pvc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-no-pvc
+  template:
+    metadata:
+      labels:
+        app: nginx-no-pvc
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
