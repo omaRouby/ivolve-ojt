@@ -44,7 +44,7 @@ In this scenario, we'll use a StatefulSet to manage a MySQL database where each 
 
 This setup ensures high availability and read scalability for the MySQL database.
 
-## Steps to Create a StatefulSet (No YAML File Provided)
+## Steps to Create a StatefulSet (YAML File Provided)
 
 1. **Define Configurations**: Determine the configuration parameters for the MySQL StatefulSet, including the number of replicas, storage requirements, and network settings.
 
