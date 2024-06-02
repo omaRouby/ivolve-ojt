@@ -1,4 +1,4 @@
-# Persistent Volumes (PV) vs. Persistent Volume Claims (PVC) vs. Storage Classes: Deployment Example
+# Persistent Volumes (PV) vs. Persistent Volume Claims (PVC) vs. Storage Classes & Deployment Example
 
 ## Introduction
 
