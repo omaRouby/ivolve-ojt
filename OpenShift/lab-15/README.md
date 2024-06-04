@@ -25,11 +25,11 @@ Here are the steps to create a DaemonSet YAML file with a Pod template containin
 
 ## Taint and Toleration and NodeAfiinity
 
-Taints and tolerations work together to ensure that pods are not scheduled on inappropriate nodes. Taints are applied to nodes, and tolerations are added to pods.
+- Taints and tolerations work together to ensure that pods are not scheduled on inappropriate nodes. Taints are applied to nodes, and tolerations are added to pods.
 
-Node affinity in Kubernetes lets you control where pods run.  It uses labels to match pods with nodes that have specific characteristics, like having GPUs or extra memory.  This helps optimize pod placement for better performance and resource allocation.
+- Node affinity in Kubernetes lets you control where pods run.  It uses labels to match pods with nodes that have specific characteristics, like having GPUs or extra memory.  This helps optimize pod placement for better performance and resource allocation.
 
-Node affinity can be even more powerful when used in conjunction with taints and tolerations. Taints are essentially labels applied to nodes that mark them as unsuitable for certain pods. Pods can have tolerations that allow them to run on tainted nodes. By combining these features, you can achieve very granular control over pod scheduling. For instance, you can taint a node for maintenance, preventing any pods from being scheduled there. Then, you can create a critical pod with a toleration for the maintenance taint, ensuring it continues to run even during maintenance. This approach ensures only authorized pods can run on specific nodes while maintaining flexibility for critical tasks. 
+- Node affinity can be even more powerful when used in conjunction with taints and tolerations. Taints are essentially labels applied to nodes that mark them as unsuitable for certain pods. Pods can have tolerations that allow them to run on tainted nodes. By combining these features, you can achieve very granular control over pod scheduling. For instance, you can taint a node for maintenance, preventing any pods from being scheduled there. Then, you can create a critical pod with a toleration for the maintenance taint, ensuring it continues to run even during maintenance. This approach ensures only authorized pods can run on specific nodes while maintaining flexibility for critical tasks. 
 
 Here are the steps to taint a Minikube node with a specific key-value pair 'color=red', create a pod with toleration 'color=blue', and then change the toleration to 'color=red':
 
