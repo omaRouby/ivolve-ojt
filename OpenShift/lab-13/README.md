@@ -98,5 +98,5 @@ spec:
     - Retrieve the NodePort assigned using `kubectl get services`.
     - Access Jenkins through the NodePort URL.
       
-![]()
+![](https://github.com/omaRouby/ivolve-ojt/blob/main/OpenShift/lab-13/pictures/jenkins.png)
 By following these steps, you will be able to create a multi-container application deployment with Jenkins, ensuring proper initialization, monitoring, and external accessibility.
