@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      initContainers:
+      - name: init
+        image: alpine:latest  # Using alpine image instead of busybox
+        command: ["sh", "-c", "sleep 10"]  # Sleep for 10 seconds
+      containers:
+      - name: jenkins
+        image: jenkins/jenkins:lts
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /login
+            port: 8080
+          initialDelaySeconds: 30  # Check after 30 seconds
+          periodSeconds: 20      # Check every 20 seconds
+          failureThreshold: 3     # Consider unhealthy after 3 failures
+        readinessProbe:
+          httpGet:
+            path: /login
+            port: 8080
+          initialDelaySeconds: 15  # Check after 15 seconds
+          periodSeconds: 10      # Check every 10 seconds
+          failureThreshold: 5     # Consider unhealthy after 5 failures

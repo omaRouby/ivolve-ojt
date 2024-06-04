@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Node
+metadata:
+  name: minikube 
+spec:
+  taints:
+  - key: color
+    value: red
+    effect: NoSchedule #NoExecute 
